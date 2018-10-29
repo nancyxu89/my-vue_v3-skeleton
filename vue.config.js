@@ -6,7 +6,7 @@ const nodeExternals = require('webpack-node-externals')
 const VueSSRServerPlugin = require('vue-server-renderer/server-plugin')
 const merge = require('lodash.merge')
 const TARGET_NODE = process.env.WEBPACK_TARGET === 'skeleton'
-const target = TARGET_NODE ? 'skeleton2' : 'client'
+const target = TARGET_NODE ? 'skeleton' : 'client'
 
 const skeletonConfig = {
 	entry: `./src/${target}.entry.js`,
