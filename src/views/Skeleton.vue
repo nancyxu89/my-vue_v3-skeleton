@@ -36,7 +36,7 @@
 	.skeleton-img {
 		width: 200px;
 		height: 200px;
-		margin-left: 25%;
+		margin-left: calc(50% - 100px);
 		background: #eee;
 	}
 
