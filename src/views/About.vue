@@ -10,7 +10,6 @@ export default {
 		return {}
 	},
 	created() {
-		// 监听与服务端的连接
 		let socket = io('http://localhost:19800')
 		socket.on('news', function(data) {
 			console.log(data)
