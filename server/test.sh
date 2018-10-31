@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-echo 'hello shell'
+echo 'hello shell bash'
