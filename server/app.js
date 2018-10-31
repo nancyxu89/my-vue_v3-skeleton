@@ -19,6 +19,10 @@ app.get('/', function (req, res) {
     res.type('text/html');
     res.sendfile(path.join(__dirname, '../dist') + 'index.html')
 })
+app.post('/github-webhook/', function (req,res) {
+    console.info(req)
+    res.send('ok')
+})
 
 let server = app.listen(19800, function () {
     var host = server.address().address;
