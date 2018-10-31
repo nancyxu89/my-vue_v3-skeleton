@@ -20,7 +20,8 @@ app.get('/', function (req, res) {
     res.sendfile(path.join(__dirname, '../dist') + 'index.html')
 })
 app.post('/github-webhook/', function (req,res) {
-    console.info(req)
+    console.info(req.data)
+    console.info(req.body)
     res.send('ok')
 })
 
